@@ -4,8 +4,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using TelemetryViewer.Packets.f120.Header;
-using TelemetryViewer.Packets.f120.Motion;
-using TelemetryViewer.Packets.f120.Session;
 using TelemetryViewer.Dicts.f120.PacketInfo;
 using TelemetryViewer.Packets;
 
@@ -14,7 +12,6 @@ namespace TelemetryViewer.Server
     public class UDPServer : IServer
     {
         private CancellationToken _cancellationToken;
-        private int countPacket = 0;
 
         public void Start(string hostIp, int port, CancellationToken cancellationToken)
         {
@@ -40,8 +37,6 @@ namespace TelemetryViewer.Server
 
                         // Imprimir o conteúdo do PacketHeader
                         Console.WriteLine($"-------------------------------- BEGIN PACKET --------------------------------");
-                        countPacket += 1;
-
                         Console.WriteLine("Received Packet Header:");
                         Packet.PrintPacketHeader(packetHeader);
                         Console.WriteLine("");
@@ -83,7 +78,6 @@ namespace TelemetryViewer.Server
             finally
             {
                 udpClient.Close();
-                Console.WriteLine($"Packaged Received: {countPacket}");
                 Console.WriteLine("UDP Server stopped.");
             }
         }
