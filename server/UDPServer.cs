@@ -44,6 +44,8 @@ namespace TelemetryViewer.Server
                         try{
                             var packetInfo = PacketInfo.GetPacketInfo(packetHeader.m_packetId);
                             var packetReceived = Packet.DeserializePacketDynamic(buffer, packetInfo.StructureType);
+                            Console.WriteLine($"Packet Header Version: {packetInfo.StructureType}");
+
                             if (packetReceived != null){
                                 Console.WriteLine($"Received Packet {packetInfo.Name}:");
                                 Packet.PrintPacketDetails(packetReceived);
