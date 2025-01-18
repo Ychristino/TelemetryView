@@ -24,7 +24,7 @@ namespace TelemetryViewer.Dicts.f120.Buttons
             { 0x4000, "Right Stick Click" }
         };
 
-        public static List<string> GetPressedButtons(int buttonFlags)
+        public static List<string> GetPressedButtons(uint buttonFlags)
         {
             var pressedButtons = new List<string>();
 

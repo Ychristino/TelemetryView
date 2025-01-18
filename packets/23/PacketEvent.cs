@@ -110,7 +110,7 @@ namespace TelemetryViewer.Packets.f123.Event
     }
 
     // Pacote de dados do evento
-    public struct PacketEventData
+    public struct PacketEvent
     {
         public PacketHeader Header;              // Cabeçalho
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]

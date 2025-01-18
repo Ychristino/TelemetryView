@@ -27,7 +27,7 @@ namespace TelemetryViewer.Packets.f122.Motion
     }
 
     // Estrutura para os dados do pacote de movimento
-    public struct PacketMotionData
+    public struct PacketMotion
     {
         public PacketHeader m_header; // Cabeçalho
         public CarMotionData[] m_carMotionData; // Dados para todos os carros na pista

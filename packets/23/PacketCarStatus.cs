@@ -35,7 +35,7 @@ namespace TelemetryViewer.Packets.f123.Status
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarStatusData
+    public struct PacketCarStatus
     {
         public PacketHeader m_header;                            // Cabeçalho
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 22)]

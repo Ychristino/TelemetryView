@@ -17,7 +17,7 @@ namespace TelemetryViewer.Packets.f120.LobbyInfo
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketLobbyInfoData
+    public struct PacketLobbyInfo
     {
         public PacketHeader m_header;  // Header
         public byte m_numPlayers;      // Number of players in the lobby data

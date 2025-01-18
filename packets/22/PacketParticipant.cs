@@ -20,7 +20,7 @@ namespace TelemetryViewer.Packets.f122.Participants
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketParticipantsData
+    public struct PacketParticipants
     {
         public PacketHeader m_header; // Cabeçalho
         public byte m_numActiveCars; // Número de carros ativos nos dados – deve corresponder ao número de carros no HUD

@@ -84,7 +84,7 @@ namespace TelemetryViewer.Packets.f121.Event
 
     // Structure for event data packet
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketEventData
+    public struct PacketEvent
     {
         public PacketHeader m_header;               // Packet header
 

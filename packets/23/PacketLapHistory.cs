@@ -26,7 +26,7 @@ namespace TelemetryViewer.Packets.f123.SessionHistory
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketSessionHistoryData
+    public struct PacketSessionHistory
     {
         public PacketHeader m_header;               // Cabeçalho
         public byte m_carIdx;                       // Índice do carro ao qual os dados dessa volta se referem

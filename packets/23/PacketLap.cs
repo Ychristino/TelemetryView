@@ -39,7 +39,7 @@ namespace TelemetryViewer.Packets.f123.Lap
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketLapData
+    public struct PacketLap
     {
         public PacketHeader Header;                         // Packet header
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 22)]

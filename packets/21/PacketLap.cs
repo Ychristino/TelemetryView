@@ -37,7 +37,7 @@ namespace TelemetryViewer.Packets.f121.Lap
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketLapData
+    public struct PacketLap
     {
         public PacketHeader m_header;              // Header
 

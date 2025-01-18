@@ -19,7 +19,7 @@ namespace TelemetryViewer.Packets.f123.TyreSets
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketTyreSetsData
+    public struct PacketTyreSets
     {
         public PacketHeader m_header;           // Cabeçalho
         public byte m_carIdx;                   // Índice do carro ao qual os dados se referem

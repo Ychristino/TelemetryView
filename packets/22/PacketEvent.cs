@@ -101,7 +101,7 @@ namespace TelemetryViewer.Packets.f122.Event
     }
 
     // Pacote de dados do evento
-    public struct PacketEventData
+    public struct PacketEvent
     {
         public PacketHeader m_header;           // Cabeçalho
         public byte[] m_eventStringCode;       // Código da string do evento (4 bytes)

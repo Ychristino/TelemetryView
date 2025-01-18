@@ -50,7 +50,7 @@ namespace TelemetryViewer.Packets.f121.CarStatus
 
     // Structure for Packet Car Status Data
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarStatusData
+    public struct PacketCarStatus
     {
         public PacketHeader m_header;             // Header
 

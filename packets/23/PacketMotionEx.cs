@@ -5,7 +5,7 @@ using TelemetryViewer.Packets.f123.Header;
 namespace TelemetryViewer.Packets.f123.MotionEx
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketMotionExData
+    public struct PacketMotionEx
     {
         public PacketHeader m_header;               // Cabeçalho
 

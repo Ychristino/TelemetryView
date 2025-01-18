@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace TelemetryViewer.Dicts.f122.Mode
+namespace TelemetryViewer.Dicts.f122.GameMode
 {
-    public class Mode
+    public class GameMode
     {
         private static readonly Dictionary<int, string> ModeNames = new Dictionary<int, string>
         {

@@ -34,7 +34,7 @@ namespace TelemetryViewer.Packets.f121.CarSetup
 
     // Structure for Packet Car Setup Data
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarSetupData
+    public struct PacketCarSetup
     {
         public PacketHeader m_header;           // Header
 

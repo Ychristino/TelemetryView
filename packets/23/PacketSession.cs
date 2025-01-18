@@ -28,7 +28,7 @@ namespace TelemetryViewer.Packets.f123.Session
     };
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketSessionData
+    public struct PacketSession
     {
         public PacketHeader Header;               // Header
 

@@ -27,7 +27,7 @@ namespace TelemetryViewer.Packets.f121.SessionHistory
 
     // Structure for Packet Session History Data
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketSessionHistoryData
+    public struct PacketSessionHistory
     {
         public PacketHeader m_header;                // Header
         public byte m_carIdx;                        // Index of the car this lap data relates to

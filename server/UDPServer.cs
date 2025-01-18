@@ -45,6 +45,7 @@ namespace TelemetryViewer.Server
                             var packetInfo = PacketInfo.GetPacketInfo(packetHeader.m_packetId);
                             var packetReceived = Packet.DeserializePacketDynamic(buffer, packetInfo.StructureType);
                             Console.WriteLine($"Packet Header Version: {packetInfo.StructureType}");
+                            Packet.WriteFile(packetReceived, packetInfo.PDSWrite);
 
                             if (packetReceived != null){
                                 Console.WriteLine($"Received Packet {packetInfo.Name}:");
@@ -62,7 +63,7 @@ namespace TelemetryViewer.Server
                         }
                         Console.WriteLine($"--------------------------------- END PACKET ---------------------------------");
 
-                        sendMessage(udpClient, "ack\n", remoteEndPoint.Address.ToString(), remoteEndPoint.Port);
+                        // sendMessage(udpClient, "ack\n", remoteEndPoint.Address.ToString(), remoteEndPoint.Port);
                     }
                     else
                     {

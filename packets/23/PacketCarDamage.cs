@@ -37,7 +37,7 @@ namespace TelemetryViewer.Packets.f123.Damage
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarDamageData
+    public struct PacketCarDamage
     {
         public PacketHeader m_header;             // Cabeçalho
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 22)]

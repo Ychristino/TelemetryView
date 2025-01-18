@@ -27,7 +27,7 @@ namespace TelemetryViewer.Packets.f122.Session
     }
 
     // Estrutura para os dados de uma sessão de corrida
-    public struct PacketSessionData
+    public struct PacketSession
     {
         public PacketHeader m_header; // Cabeçalho
         public byte m_weather; // Clima - 0 = céu limpo, 1 = nuvem leve, 2 = nublado

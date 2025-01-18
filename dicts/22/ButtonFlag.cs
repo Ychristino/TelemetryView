@@ -41,7 +41,7 @@ namespace TelemetryViewer.Dicts.f122.Buttons
             { -2147483648, "UDP Action 12" } // Valor negativo para representar o último valor (o maior valor de uint)
         };
 
-        public static List<string> GetPressedButtons(int buttonFlags)
+        public static List<string> GetPressedButtons(uint buttonFlags)
         {
             var pressedButtons = new List<string>();
 

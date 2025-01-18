@@ -53,7 +53,7 @@ namespace TelemetryViewer.Packets.f120.CarStatus
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarStatusData
+    public struct PacketCarStatus
     {
         public PacketHeader m_header;             // Header
 

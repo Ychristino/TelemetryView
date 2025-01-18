@@ -28,7 +28,7 @@ namespace TelemetryViewer.Packets.f123.Motion
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketMotionData
+    public struct PacketMotion
     {
         public PacketHeader Header; // Header
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 22)]

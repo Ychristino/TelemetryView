@@ -32,7 +32,7 @@ namespace TelemetryViewer.Packets.f121.FinalClassification
 
     // Structure for Packet Final Classification Data
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketFinalClassificationData
+    public struct PacketFinalClassification
     {
         public PacketHeader m_header;              // Header
         public byte m_numCars;                     // Number of cars in the final classification

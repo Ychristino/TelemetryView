@@ -38,7 +38,7 @@ namespace TelemetryViewer.Packets.f121.CarTelemetry
 
     // Structure for Packet Car Telemetry Data
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct PacketCarTelemetryData
+    public struct PacketCarTelemetry
     {
         public PacketHeader m_header;            // Header
 

@@ -38,7 +38,7 @@ namespace TelemetryViewer.Packets.f122.Lap
     }
 
     // Estrutura para os dados da volta de todos os carros
-    public struct PacketLapData
+    public struct PacketLap
     {
         public PacketHeader m_header; // Cabeçalho
         public LapData[] m_lapData; // Dados de volta para todos os carros na pista
