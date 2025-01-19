@@ -19,7 +19,7 @@ namespace TelemetryViewer
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation("Starting server...");
-            Task.Run(() => _server.Start("26.108.51.74", 20777, stoppingToken), stoppingToken);
+            Task.Run(() => _server.Start("127.0.0.1", 20777, stoppingToken), stoppingToken);
 
             return Task.CompletedTask;
         }

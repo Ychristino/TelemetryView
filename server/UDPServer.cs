@@ -31,17 +31,18 @@ namespace TelemetryViewer.Server
                     if (udpClient.Available > 0)
                     {
                         buffer = udpClient.Receive(ref remoteEndPoint);
-
-                        // Deserializar o PacketHeader
-                        var packetHeader = Packet.DeserializePacket<PacketHeader>(buffer);
-
-                        // Imprimir o conteúdo do PacketHeader
-                        Console.WriteLine($"-------------------------------- BEGIN PACKET --------------------------------");
-                        Console.WriteLine("Received Packet Header:");
-                        Packet.PrintPacketHeader(packetHeader);
-                        Console.WriteLine("");
-
                         try{
+
+                            // Imprimir o conteúdo do PacketHeader
+                            Console.WriteLine($"-------------------------------- BEGIN PACKET --------------------------------");
+
+                            // Deserializar o PacketHeader
+                            var packetHeader = Packet.DeserializePacket<PacketHeader>(buffer);
+
+                            Console.WriteLine("Received Packet Header:");
+                            Packet.PrintPacketHeader(packetHeader);
+                            Console.WriteLine("");
+
                             var packetInfo = PacketInfo.GetPacketInfo(packetHeader.m_packetId);
                             var packetReceived = Packet.DeserializePacketDynamic(buffer, packetInfo.StructureType);
                             Console.WriteLine($"Packet Header Version: {packetInfo.StructureType}");
